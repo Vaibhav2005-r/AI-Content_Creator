@@ -1,1 +1,36 @@
-/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: #f9f9f9;
+}
+
+button {
+  background: #0070f3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #0051cc;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+select, textarea, input {
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px;
+}
