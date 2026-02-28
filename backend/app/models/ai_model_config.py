@@ -67,7 +67,7 @@ class ModelUsageLog(Base):
     id = Column(Integer, primary_key=True, index=True)
     
     # Model reference
-    model_config_id = Column(Integer, nullable=False, index=True)
+    model_config_id = Column(Integer, nullable=True, index=True)
     model_name = Column(String(255), nullable=False, index=True)
     
     # User reference

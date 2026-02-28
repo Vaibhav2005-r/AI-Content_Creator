@@ -1,23 +1,30 @@
-fastapi==0.104.1
-uvicorn==0.24.0
-python-dotenv==1.0.0
-pydantic==2.5.0
-sqlalchemy==2.0.23
-alembic==1.12.1
+# Core Framework
+fastapi
+uvicorn
+python-dotenv
+pydantic
+sqlalchemy
+alembic
 
 # AWS SDK
-boto3==1.29.0
-botocore==1.32.0
+boto3
+botocore
 
 # Database drivers
-psycopg2-binary==2.9.9  # PostgreSQL
-pymysql==1.1.0  # MySQL
+pymysql  # MySQL (optional)
+# psycopg2-binary  # PostgreSQL (uncomment if needed, requires pg_config on Windows)
 
 # Authentication
-python-jose[cryptography]==3.3.0
-passlib[bcrypt]==1.7.4
-python-multipart==0.0.6
+python-jose
+passlib
+python-multipart
 
 # HTTP client
-httpx==0.25.0
-requests==2.31.0
+httpx
+requests
+
+# Google Gemini AI
+google-generativeai>=0.3.0
+
+# Social Media SDKs
+tweepy>=4.14.0  # Twitter / X API

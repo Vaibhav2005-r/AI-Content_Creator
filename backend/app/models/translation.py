@@ -15,7 +15,7 @@ class Translation(Base):
     __tablename__ = "translations"
 
     id = Column(Integer, primary_key=True, index=True)
-    content_id = Column(Integer, ForeignKey("contents.id"), nullable=False, index=True)
+    content_id = Column(Integer, ForeignKey("contents.id"), nullable=True, index=True)
     
     # Translation details
     source_text = Column(Text, nullable=False)

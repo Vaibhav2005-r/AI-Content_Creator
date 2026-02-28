@@ -68,8 +68,8 @@ class GeminiContentGenerator:
             
             return {
                 "content": content,
-                "model_used": "gemini-pro",
-                "model_name": "Google Gemini Pro",
+                "model_used": "gemini-2.5-flash",
+                "model_name": "Google Gemini 2.5 Flash",
                 "generation_time_ms": generation_time,
                 "input_tokens": input_tokens,
                 "output_tokens": output_tokens,
